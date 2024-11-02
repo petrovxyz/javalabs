@@ -1,13 +1,11 @@
 public class GildedRose {
-    private final Item[] items;
+    private final ItemCollection itemCollection;
 
-    public GildedRose(Item[] items) {
-        this.items = items;
+    public GildedRose(ItemCollection itemCollection) {
+        this.itemCollection = itemCollection;
     }
 
     public void updateQuality() {
-        for (Item item : items) {
-            item.update();
-        }
+        itemCollection.updateQuality();
     }
 }
