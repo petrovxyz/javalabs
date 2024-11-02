@@ -12,4 +12,8 @@ public class ItemCollection {
             item.update();
         }
     }
+
+    public List<Item> getItems() {
+        return List.copyOf(items);
+    }
 }
